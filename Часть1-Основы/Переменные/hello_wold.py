@@ -1,6 +1,7 @@
 print("Hello Python world!")
 
-message = "Hello Python Crash Course reader!"
+# Попробуем использовать переменную в программе hello_world.py
+message = "Hello Python Crash Course reader!" 
 print(mesage)
 
 
