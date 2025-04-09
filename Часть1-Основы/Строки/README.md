@@ -13,3 +13,11 @@
 ### Удаление пробельных символов
 
 [del_symbol.py](https://github.com/alekseypopkov/python_book/blob/main/Часть1-Основы/Строки/del_symbol.py)
+
+### Удаление префиксов
+
+[del_pref_symbol.py](https://github.com/alekseypopkov/python_book/blob/main/Часть1-Основы/Строки/del_pref_symbol.py)
+
+### Предотвращение синтаксических ошибок в строках
+
+[apostrophe.py](https://github.com/alekseypopkov/python_book/blob/main/Часть1-Основы/Строки/apostrophe.py)
