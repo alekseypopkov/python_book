@@ -2,4 +2,8 @@
 
 Список представляет собой набор элементов, следующих в определенном порядке.
 
-[bicycles.py]()
+[bicycles.py](https://github.com/alekseypopkov/python_book/blob/main/Часть1-Основы/Списки/bicycles.py)
+
+### Изменение, добавление и удаление элементов
+
+[motorcycles.py](https://github.com/alekseypopkov/python_book/blob/main/Часть1-Основы/Списки/motorcycles.py)
