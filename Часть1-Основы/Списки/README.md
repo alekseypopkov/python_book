@@ -7,3 +7,7 @@
 ### Изменение, добавление и удаление элементов
 
 [motorcycles.py](https://github.com/alekseypopkov/python_book/blob/main/Часть1-Основы/Списки/motorcycles.py)
+
+### Упражнения - тренируюсь
+
+[workout.py](https://github.com/alekseypopkov/python_book/blob/main/Часть1-Основы/Списки/workout.py)
