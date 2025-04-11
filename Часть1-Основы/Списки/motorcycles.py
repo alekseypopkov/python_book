@@ -96,3 +96,41 @@ print(f"\n4. The first motorcycle I owned was a {first_owned.title()}.\n")
 # если вы собираетесь просто удалить элемент из списка, никак не используя его после удаления, 
 # то выбирайте оператор del; в противном случае выбирайте метод pop().
 
+# 5. Удаление элементов по значению 
+# Иногда позиция удаляемого элемента неизвестна. Если вы знаете только значение
+# элемента, то используйте метод remove().
+# Допустим, из списка нужно удалить значение 'ducati':
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(f"\n\t5. Удаление элементов по значению - метод remove()\n\nmotorcycles = {motorcycles}")
+motorcycles.remove('ducati')
+print("motorcycles.remove('ducati')")
+print(f"motorcycles = {motorcycles}\n")
+
+#Благодаря методу remove() Python получает указание выяснить, в какой позиции списка находится значение 'ducati', и удалить этот элемент:
+
+#['honda', 'yamaha', 'suzuki', 'ducati']
+#['honda', 'yamaha', 'suzuki']
+
+# Кроме того, метод remove() может использоваться для работы со значением, которое
+# удаляется из списка. Следующая программа удаляет значение 'ducati' и выводит причину удаления:
+
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(motorcycles)
+too_expensive = 'ducati'
+motorcycles.remove(too_expensive)
+print(motorcycles)
+print(f"\nA {too_expensive.title()} is too expensive for me.")
+
+# После определения списка значение 'ducati' сохраняется в переменной too_expensive. 
+# Затем эта переменная сообщает Python, какое значение должно быть удалено из списка. 
+# Значение 'ducati' было удалено из списка, но продолжает храниться в переменной too_expensive, 
+# что позволяет вывести сообщение, в котором указывается причина удаления 'ducati' из списка мотоциклов:
+
+#['honda', 'yamaha', 'suzuki', 'ducati']
+#['honda', 'yamaha', 'suzuki']
+# A Ducati is too expensive for me.
+
+#ПРИМЕЧАНИЕ
+# Метод remove() удаляет только первое вхождение заданного значения. Если существует
+# вероятность того, что значение встречается в списке несколько раз, то используйте цикл,
+# чтобы определить, были ли удалены все вхождения данного значения.
