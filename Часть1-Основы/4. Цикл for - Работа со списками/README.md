@@ -8,5 +8,7 @@
 - Простая статистика с числовыми списками
 - Генераторы списков
 
-[first_numbers.py]()
+[first_numbers.py](https://github.com/alekseypopkov/python_book/blob/main/Часть1-Основы/4.%20Цикл%20for%20-%20Работа%20со%20списками/first_numbers.py)
+
+[workout](https://github.com/alekseypopkov/python_book/blob/main/Часть1-Основы/4.%20Цикл%20for%20-%20Работа%20со%20списками/workout.py) - Я тренеруюсь
 
