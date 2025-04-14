@@ -26,6 +26,8 @@ for animal in animals:
     print(f"\n{animal} — отличное домашнее животное")
 print("\nЛюбое из этих животных — отличное домашнее животное!")
 
+# Создание числовых списков
+
 # 4.3. Считаем до 20. Используйте цикл for для вывода чисел от 1 до 20 включительно.
 
 numbers = [print(number) for number in range(1, 21)]
@@ -71,3 +73,5 @@ print()
 
 numbers =[print(number**3) for number in range(1, 10)]
 print()
+
+# Работа с частью списка
