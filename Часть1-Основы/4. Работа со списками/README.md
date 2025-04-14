@@ -14,4 +14,4 @@
 
 ### Работа с частью списка
 
-[players.py]()
+[players.py](https://github.com/alekseypopkov/python_book/blob/main/Часть1-Основы/4.%20Работа%20со%20списками/players.py)
