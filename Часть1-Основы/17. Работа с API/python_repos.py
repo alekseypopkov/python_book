@@ -1,5 +1,7 @@
 import requests
+import pandas as pd
 import plotly.express as px
+
 from pprint import pprint
 
 # Создание вызова API и сохранение ответа.
@@ -21,22 +23,29 @@ print(f"Complete results: {not response_dict['incomplete_results']}")
 
 # Анализ информации о репозиториях.
 repo_dicts = response_dict['items']
-print(f"Repositories returned: {len(repo_dicts)}")
+repo_names, stars = [], []
+for repo_dict in repo_dicts:
+    repo_names.append(repo_dict['name'])
+    stars.append(repo_dict['stargazers_count'])
 
-# Анализ первого репозитория.
-repo_dict = repo_dicts[0]
+# Создание визуализации.
+fig = px.bar(x=repo_names, y=stars)
+fig.show()
 
-# Прочитаем значения некоторых ключей repo_dict:
+    # # Анализ первого репозитория.
+    # repo_dict = repo_dicts[0]
 
-print("\nSelected information about first repository:")
-print(f"Name: {repo_dict['name']}")
-print(f"Owner: {repo_dict['owner']['login']}")
-print(f"Stars: {repo_dict['stargazers_count']}")
-print(f"Repository: {repo_dict['html_url']}")
-print(f"Created: {repo_dict['created_at']}")
-print(f"Updated: {repo_dict['updated_at']}")
-print(f"Description: {repo_dict['description']}")
-pprint(f"\nKeys: {len(repo_dict)}")
+    # # Прочитаем значения некоторых ключей repo_dict:
 
-for key in sorted(repo_dict.keys()):
-    print(key)
+    # print("\nSelected information about first repository:")
+    # print(f"Name: {repo_dict['name']}")
+    # print(f"Owner: {repo_dict['owner']['login']}")
+    # print(f"Stars: {repo_dict['stargazers_count']}")
+    # print(f"Repository: {repo_dict['html_url']}")
+    # print(f"Created: {repo_dict['created_at']}")
+    # print(f"Updated: {repo_dict['updated_at']}")
+    # print(f"Description: {repo_dict['description']}")
+    # pprint(f"\nKeys: {len(repo_dict)}")
+
+    # for key in sorted(repo_dict.keys()):
+    #     print(key)
