@@ -1,4 +1,5 @@
 import requests
+import plotly.express as px
 from pprint import pprint
 
 # Создание вызова API и сохранение ответа.
